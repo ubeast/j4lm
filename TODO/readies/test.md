@@ -1,3 +1,3 @@
-ARCHIVE holds the Advana-required backup of pre-migration code. Read-only, not for active development. Retention requirements are still being confirmed with records management. See where-does-this-go.md in COMMON guidance for details.
+guidance holds policy, standards, and onboarding docs for TC4JLM, including the GitLab structure guides. Start with the root README index. This is docs only, not code — see j4lm-pylib for shared code.
 
 Contact: Michael Schertz, michael.schertz.civ@mail.mil
