@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+# RENAME: replace "product_name" with the actual product/package name
+# (lowercase-kebab-case for the GitLab project name, snake_case for the import name)
+name = "product-name"
+version = "0.1.0"
+description = "One-line description of what this product does."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+authors = [
+    { name = "Team or owner name" },
+]
+# Add real runtime dependencies here. Pin shared internal packages to an
+# explicit version — never track main.
+dependencies = [
+    # "j4lm-pylib==1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "mypy>=1.10",
+    "ruff>=0.5",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/product_name"]
+
+# --- Linting ---
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+# --- Type checking ---
+[tool.mypy]
+python_version = "3.11"
+strict = true
+disallow_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+
+# --- Testing ---
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=src/product_name --cov-report=term-missing"

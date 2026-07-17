@@ -1,0 +1,9 @@
+# Assign real owners before this repo goes live.
+# GitLab uses this file to require review/approval from the listed
+# owner(s) on changes to the matched paths.
+#
+# Example:
+# * @team-lead-username
+# /business_rules/ @sme-username
+
+* @replace-with-owner-username
