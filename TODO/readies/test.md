@@ -1,5 +1,7 @@
 # LABS
 
+> **Questions or comments? Contact:** Michael Schertz — michael.schertz.civ@mail.mil
+
 Team-level, pre-product work — multiple contributors, not yet owned like
 a product.
 
@@ -29,5 +31,3 @@ An initiative moves to `PRODUCTS/<name>` once it has a real owner, real
 users, and/or a delivery target. If something sits with no real progress
 for a long stretch (~6 months), revisit it — either push toward
 graduation or archive it.
-
-**Questions or comments?** Contact Michael Schertz — michael.schertz.civ@mail.mil
